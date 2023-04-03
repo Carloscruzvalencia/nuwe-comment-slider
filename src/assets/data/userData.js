@@ -1,0 +1,7 @@
+var userData1 =["Sofía González","Visual Studio Code es la herramienta de desarrollo más versátil que he usado hasta ahora. Es intuitivo, rápido y muy personalizable, lo que me permite adaptarlo a mi flujo de trabajo y aumentar mi productividad"]
+var userData2 =["Lucas Rodríguez","Adobe Photoshop es imprescindible para cualquier diseñador gráfico. La variedad de herramientas que ofrece para la edición y creación de imágenes es inigualable y los resultados finales son sorprendentes"]
+var userData3 =["Valentina Castro","Sublime Text es mi editor de texto preferido para codificar. Es ligero, rápido y tiene una gran cantidad de complementos disponibles, lo que lo convierte en una herramienta altamente personalizable"]
+var userData4 =["Nicolás Fernández","PyCharm es el mejor entorno de desarrollo integrado para Python. Su integración con Git, su depurador avanzado y sus potentes funciones de análisis de código son impresionantes"]
+var userData5 =["Martina Sánchez","Eclipse es un entorno de desarrollo integrado robusto y muy personalizable que es ideal para el desarrollo de aplicaciones Java. Ofrece una amplia gama de herramientas y complementos para mejorar el flujo de trabajo del programador"]
+
+export {userData1,userData2,userData3,userData4,userData5}
