@@ -1,9 +1,8 @@
 import React from 'react'
 
-import userCountry from "../../assets/images/country/flags.jpg"
 
 
-const UserCard = ({userImage,userName,userComment}) => {
+const UserCard = ({userImage,userCountry,userName,userComment}) => {
   return (
     <div className='slider'>
       <div className="slider__user-info">

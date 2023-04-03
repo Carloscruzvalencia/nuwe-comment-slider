@@ -1,13 +1,21 @@
 import React from 'react'
-import {UserCard} from "./components";
+import { UserCard } from "./components";
 
-import * as images from "./assets/images/personImages"; 
-// images.Image1
+import * as imagesPerson from "./assets/images/personImages";
+import * as imagesCountry from "./assets/images/country";
+
+import * as usData from "./assets/data/userData"
+
 
 const App = () => {
   return (
     <div className='App'>
-        <UserCard userImage={images.image1} userName="carlos cruz" userComment="buenas patatas"></UserCard>
+      <UserCard
+        userImage={imagesPerson.image1}
+        userCountry={imagesCountry.imageC1}
+        userName={usData.userData1[0]}
+        userComment={usData.userData1[1]}>
+      </UserCard>
     </div>
   )
 }

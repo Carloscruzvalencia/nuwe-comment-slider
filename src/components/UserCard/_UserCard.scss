@@ -1,0 +1,88 @@
+.slider {
+    display: grid;
+    max-width: 50vw;
+    min-width: 25vw !important;
+    background-color: #252835;
+    align-self: center;
+    justify-self: center;
+    border-radius: 1vw;
+    border: #323232 solid 3px;
+    align-content: center;
+    justify-content: center;
+
+    .slider__user-info {
+        padding: 5vh;
+        display: grid;
+        grid-template-columns: 0.6fr 1fr;
+        // grid-template-rows: 1fr 3fr;
+
+        .slider__user--images {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            width: min-content;
+            height: min-content;
+            grid-area: 1/1;
+
+            .slider__user-image {}
+
+            .slider__user-image--profile {
+                width: 5vw;
+                height: 5vw;
+                border-radius: 100vh;
+                grid-area: 1/1;
+            }
+
+            .slider__user-image--country {
+                width: 1.8vw;
+                grid-area: 1/1;
+                justify-self: end;
+                align-self: end;
+                transform: translateY(10px);
+            }
+        }
+    }
+}
+
+.slider__user-name {
+    color: white;
+    justify-self: center;
+    align-self: center;
+    grid-area: 1/1;
+    font-size: 1.6rem;
+    transform: translateX(3vh);
+    font-weight: bolder;
+}
+
+.slider__user-comment {
+    grid-area: 2/1/2/4;
+    color: #b3b3b3;
+    font-size: 2rem;
+    padding-top: 5vh;
+    word-break: break-word;
+}
+
+@media only screen and (max-width: 600px)  {
+    .slider{
+        max-width: 80vw;
+    }
+    .slider__user-info{
+        grid-template-columns: 1.6fr 1fr !important;
+    }
+    .slider__user-name {
+        font-size: 1rem;
+        transform: translateX(8vh);
+    }
+    .slider__user-comment {
+        font-size: 1rem;
+        word-break: break-all;
+        line-height: 6.5vw;
+    }
+    .slider__user-image--profile {
+        width: 15vw !important;
+        height: 15vw !important;
+    }
+    .slider__user-image--country {
+        width: 4.8vw !important;
+        transform: translateY(5px) !important;
+    }
+}
